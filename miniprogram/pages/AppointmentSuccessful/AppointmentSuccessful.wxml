@@ -1,0 +1,15 @@
+<!--miniprogram/pages/AppointmentSuccessful/AppointmentSuccessful.wxml-->
+<view>
+  <!-- 顶部 -->
+  <view class="top_box">
+    <view class="top_box_left">
+      <image bindtap="back" src="../../image/back.png"></image>
+      <image bindtap="back_index" src="../../image/icon_index.png"></image>
+    </view>
+    <view>预约成功</view>
+  </view>
+  <view style="height:152rpx;"></view>
+  <view class="success_title">恭喜你</view>
+  <view class="success_value">预约成功，稍后客服人员将联系你，对相关信息进行确认。并支付订单</view>
+  <view class="look_order" bindtap="feedingOrder">查看订单</view>
+</view>

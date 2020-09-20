@@ -1,0 +1,60 @@
+<view >
+  <!-- 顶部 -->
+  <view class="top_box" style="opacity:{{scroll_Top}}">
+    <view class="top_box_left">西安</view>
+    <view>泊宠</view>
+  </view>
+  <view class="top">
+    <view class="top1">
+      <view class="top1_left">
+        <image src="https://7069-pink-pc4mv-1300961709.tcb.qcloud.la/imgs/%E9%BB%84%E5%BA%95.PNG?sign=5343b053a3b54acda2d053baf3649880&t=1594732637"></image>
+        <view class="top1_left_content" bindtap="introduce">
+          <view>泊宠 - 铲屎官的小帮手 <image class="more_index" src="../../image/more_index.png"></image> </view>
+          <view>以社区为主体的到家宠物喂养</view>
+        </view>
+      </view>
+      <!-- 二维码 -->
+      <!-- <image class="top1_right" bindtap="scan" src="../../image/QR-code.png"></image> -->
+    </view>
+  </view>
+  <view class="content">
+    <!-- 轮播图 -->
+    <view class="content_swiper">
+      <swiper  class="content_swiper_box" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+            <block wx:for="{{banners}}" wx:key="*this">
+              <swiper-item>
+                <image class="swiper-item" src="{{item}}" bindtap="wmdgs" data-id="{{index}}"></image>
+              </swiper-item>
+            </block>
+      </swiper>
+      <!--重置小圆点的样式 -->
+      <view class="dots" hidden="{{banners.length < 2}}"> 
+        <block wx:for="{{banners}}" wx:key="*this"> 
+          <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view> 
+        </block> 
+      </view> 
+    </view>
+    <!-- 筛选模块 -->
+    <view class="content_screen_box {{changeType == 1 ? 'content_screen_box_active' : ''}}">
+      <view class="content_screen">
+        <view>全部区域</view>
+        <view>离我最近</view>
+        <view>价格排序</view>
+      </view>
+    </view>
+    <!-- item 项 -->
+    <view class="content_box {{changeType == 1 ? 'content_box_active' : ''}}" >
+      <view class="content_item" wx:for="{{community_Arr}}" wx:key="*this" bindtap="details" data-id="{{item._id}}">
+        <image class="content_item_img" src="{{item.logo}}"></image>
+        <view class="content_item_right">
+          <view>{{item.name}}</view>
+          <view>{{item.address}}</view>
+          <view wx:for="{{item.activity}}" wx:key="*this">{{item}}</view>
+        </view>
+      </view>
+      <!-- 没有更多 -->
+      <view class="content_text">没有更多门店了~</view>
+    </view>
+  </view>
+</view>

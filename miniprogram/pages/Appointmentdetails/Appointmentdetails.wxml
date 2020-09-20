@@ -1,0 +1,36 @@
+<!--miniprogram/pages/Appointmentdetails/Appointmentdetails.wxml-->
+<view >
+  <top-assembly inner-text="详情"></top-assembly>
+  <view class="content">
+    <view class="item_center">
+          <image src="https://7069-pink-pc4mv-1300961709.tcb.qcloud.la/imgs/%E6%B3%8A%E5%AF%93%E5%A4%A7%E5%AD%A6%E5%9F%8E%E5%BA%97.png?sign=c1f9a2c2fc36b08de1fc5867a4d6bcbd&t=1594455806"></image>
+          <view class="item_center_right">
+            <view>泊寓-大学城店</view>
+            <view>状态：{{Appointmentdetails.done}}</view>
+          </view>
+    </view>
+    <view class="item_text item_title">基本信息</view>
+    <view class="item_text border_bottom">
+      <view>姓名</view>
+      <view>{{Appointmentdetails.user_name}}</view>
+    </view>
+    <view class="item_text border_bottom">
+      <view>手机</view>
+      <view>{{Appointmentdetails.phone}}</view>
+    </view>
+    <view class="item_text item_title">宠物信息</view>
+    <view class="item_text border_bottom">
+      <view>宠物名字</view>
+      <view>{{Appointmentdetails.Pets_name}}</view>
+    </view>
+    <view class="item_text border_bottom">
+      <view>喂养频率</view>
+      <view>{{Appointmentdetails.feed_frequency}}</view>
+    </view>
+    <view class="item_text border_bottom">
+      <view>喂养时间段</view>
+      <view>{{Appointmentdetails.feed}}</view>
+    </view>
+  </view>
+  
+</view>

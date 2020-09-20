@@ -1,0 +1,150 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": true,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "appid": "wx76682c17f8ab72e7",
+  "projectname": "%E6%B3%8A%E5%AE%A0",
+  "libVersion": "2.12.0",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "query": "id=9b61b9ba5f0ae6c200204d5341e5a15b",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index2",
+          "pathName": "pages/index/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/AppointmentFeeding/AppointmentFeeding",
+          "pathName": "pages/AppointmentFeeding/AppointmentFeeding",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/AppointmentSuccessful/AppointmentSuccessful",
+          "pathName": "pages/AppointmentSuccessful/AppointmentSuccessful",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "temp/topAssembly/topAssembly",
+          "pathName": "temp/topAssembly/topAssembly",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "temp/topAssembly/topAssembly",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/feedingOrder/feedingOrder",
+          "pathName": "pages/feedingOrder/feedingOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/Appointmentdetails/Appointmentdetails",
+          "pathName": "pages/Appointmentdetails/Appointmentdetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/Feedingrecords/Feedingrecords",
+          "pathName": "pages/Feedingrecords/Feedingrecords",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/feedingOrder/feedingOrder",
+          "pathName": "pages/feedingOrder/feedingOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/introduce/introduce",
+          "pathName": "pages/introduce/introduce",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

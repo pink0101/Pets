@@ -1,0 +1,23 @@
+<!--miniprogram/pages/introduce/introduce.wxml-->
+<view>
+  <top-assembly inner-text="泊宠"></top-assembly>
+  <view class="content">
+    <view class="title">泊宠 - 铲屎官</view>
+    <view class="Date_issue">故里 --- 2020-07-14</view>
+    <image style="width:100%;height:260rpx;display:block;border-top-left-radius:10rpx;border-top-right-radius:10rpx;" src="https://7069-pink-pc4mv-1300961709.tcb.qcloud.la/imgs/%E6%88%91%E4%BB%AC%E7%9A%84%E6%95%85%E4%BA%8B.png?sign=8e6722f3b59b8fdab1e15009fb1ec695&t=1594733333"></image>
+    <view class="title1">宠物上门喂养服务</view>
+    <view class="text">让您的爱宠安心在家，铲屎官定时上门照顾。</view>
+    <view class="title1">我们的优势</view>
+    <view class="text">1.不用担心猫咪寄养被关笼子。</view>
+    <view class="text">2.不用担心猫咪因应激反应产生身体不适，情绪异常，群居感染。</view>
+    <view class="text">3.猫咪不用适应新的环境。</view>
+    <view class="text">4.猫咪可以自由自在的在家生活。</view>
+    <view class="text">5.上门喂养服务的人员均是经过严格筛选，并且经过专业的知识培训；并且他们本身也是吸猫一族，懂得猫咪的习性，以及懂得如何照顾猫咪。</view>
+    <view class="text">6.我们平台铲屎官都是经过真实身份认证，个人背景调查（学历，职业）；缴纳保证金，并且我们在服务过程中，全程进行录像，视频拍摄。安全问题在我们可以把控的范围内。</view>
+    <view class="text">泊宠 - 铲屎官 宠物上门喂养</view>
+    <view class="text">希望在漂泊的路上，有你我的陪伴</view>
+    <view class="saoyisao">
+      <image style="width:200rpx;height:200rpx" src="https://7069-pink-pc4mv-1300961709.tcb.qcloud.la/imgs/%E6%89%AB%E4%B8%80%E6%89%AB.jpg?sign=a8c424ab2f712bbc3ebac1801d4f9c82&t=1594735062"></image>
+    </view>
+  </view>
+</view>

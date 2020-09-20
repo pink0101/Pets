@@ -1,0 +1,92 @@
+<!--pages/AppointmentFeeding.wxml-->
+<view>
+<!-- 顶部 -->
+  <view class="top_box">
+    <view class="top_box_left">
+      <image bindtap="back" src="../../image/back.png"></image>
+      <image bindtap="back_index" src="../../image/icon_index.png"></image>
+    </view>
+    <view>预约喂养</view>
+  </view>
+  <view style="height:152rpx;"></view>
+  <view>
+    <view class="Feeding_title">泊寓-大学城店</view>
+    <view class="Feeding_1">基本信息</view>
+    <van-cell-group >
+      <van-field
+        value="{{ user_name }}"
+        label="姓名"
+        placeholder="请输入姓名"
+        input-align="right"
+        input-class="user_name"
+        bind:input="user_name"
+        error-message="{{err_user_name}}"
+      />
+      <van-field
+        value="{{ phone }}"
+        label="手机号"
+        placeholder="请输入手机号"
+        error-message="{{err_phone}}"
+        input-align="right"
+        border="{{ true }}"
+        bind:blur="phone"
+        type="number"
+      />
+    </van-cell-group>
+    <view class="Feeding_1">宠物信息</view>
+    <van-field
+        value="{{ Pets_name }}"
+        label="宠物姓名"
+        placeholder="请输入宠物姓名"
+        input-align="right"
+        input-class="user_name"
+        bind:input="Pets_name"
+        error-message="{{err_Pets_name}}"
+      />
+    <van-cell title="选择喂养时间" value="{{ date }}" bind:click="onDisplay" is-link label="{{err_feed_date}}"/>
+    <van-calendar
+      show="{{ show }}"
+      type="range"
+      bind:close="onClose"
+      bind:confirm="onConfirm"
+      formatter="{{ formatter }}" 
+    />
+    <van-cell title="请选择喂养频率" is-link bind:click="showPopup" value="{{FeedingFrequency}}" label="{{err_feed_frequency}}"/>
+    <van-popup
+      show="{{ show1 }}"
+      round
+      position="bottom"
+      custom-style="height: 40%"
+      bind:close="onClose1"
+    >
+    <van-picker 
+      columns="{{ columns }}"
+      show-toolbar
+      title="请选择喂养频率"
+      bind:change="onChange"
+      bind:cancel="onCancel"
+      bind:confirm="onConfirm_pv"
+      confirm-button-text="确定"
+      cancel-button-text="取消"
+       />
+    </van-popup>
+    <van-field
+      value="{{differenceDate_cs}}"
+      label="共计喂养次数"
+      readonly
+      input-align="right"
+    />
+    <van-field
+      value="{{shop_arr.Discount*10}}折优惠￥{{money}}"
+      label="金额"
+      error-message="￥{{money * shop_arr.Discount}}"
+      error-message-align="right"
+      readonly
+      input-align="right"
+      input-class='Scribing'
+    />
+    <van-cell title="请上传宠物颜值 及 防疫证明"  border="{{ false }}" />
+    <van-uploader file-list="{{ fileList }}" deletable bind:delete="delUploaderImg" bind:after-read="afterRead"/>
+    <view class="order" bindtap="order">立即预约</view>
+  </view>
+</view>

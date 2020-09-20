@@ -1,0 +1,31 @@
+
+.my{
+  padding: 160rpx 40rpx 0rpx;
+}
+.login{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.profile-img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-right: 40rpx;
+  overflow: hidden;
+}
+.content{
+  margin-top: 60rpx;
+}
+.content_item{
+  border-bottom: 1rpx solid #f4f4f4;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_item image{
+  width: 30rpx;
+  height: 30rpx;
+}

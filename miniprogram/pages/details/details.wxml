@@ -1,0 +1,49 @@
+<!--pages/details.wxml-->
+<view>
+  <!-- 顶部 -->
+  <view class="top_box">
+    <view class="top_box_left">
+      <image bindtap="back" src="../../image/back.png"></image>
+      <image bindtap="back_index" src="../../image/icon_index.png"></image>
+    </view>
+    <view>门店详情</view>
+  </view>
+  <view style="height:152rpx;"></view>
+  <!-- 轮播图 -->
+  <view class="content_swiper">
+      <swiper  class="content_swiper_box" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+            <block wx:for="{{storeDetails.imgs_swiper}}" wx:key="*this">
+              <swiper-item>
+                <image class="swiper-item" src="{{item}}"></image>
+              </swiper-item>
+            </block>
+      </swiper>
+      <!--重置小圆点的样式 -->
+      <view class="dots" hidden="{{storeDetails.imgs_swiper.length < 2}}"> 
+        <block wx:for="{{storeDetails.imgs_swiper}}" wx:key="*this"> 
+          <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view> 
+        </block> 
+      </view> 
+  </view>
+  <!-- content -->
+  <view class="content_box">
+    <view class="content_title">{{storeDetails.name}}</view>
+    <view class="content_title2">提供服务</view>
+    <view class="content_service">
+      <view class="content_service_title">{{storeDetails.service[0]}}</view>
+      <view class="content_type">
+        <view wx:for="{{storeDetails.service_classification[0]}}" wx:key="*this">{{item}}</view>
+      </view>
+      <!-- <view class="content_service_title">{{storeDetails.service[1]}}</view>
+      <view class="content_type">
+        <view wx:for="{{storeDetails.service_classification[1]}}" wx:key="*this">{{item}}</view>
+      </view> -->
+    </view>
+  </view>
+  <!-- bottom -->
+  <view class="bottom">
+    <view class="bottom_phone" bindtap="phone">电话咨询</view>
+    <view class="bottom_order" bindtap="AppointmentFeeding" data-id="{{storeDetails._id}}">预约喂养</view>
+  </view>
+</view>

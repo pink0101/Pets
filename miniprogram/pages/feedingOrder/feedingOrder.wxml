@@ -1,0 +1,33 @@
+<!--miniprogram/pages/feedingOrder/feedingOrder.wxml-->
+<view>
+  <top-assembly inner-text="预约喂养"></top-assembly>
+  <view class="content">
+      <scroll-view scroll-y="true" style="height: 100%;">
+              <view class="item" bindtap="details" wx:for="{{feedingOrder}}" wx:key="*this" data-id="{{item._id}}">
+                <view class="item_top">
+                  <view class="item_top_left">
+                    <view>预约人：{{item.user_name}}</view>
+                    <view>预约时间段：{{item.feed}}</view>
+                  </view>
+                  <view class="item_top_right">{{ item.done == 1 ?'待支付':'' }}</view>
+                </view>
+                <view class="item_center">
+                  <image src="https://7069-pink-pc4mv-1300961709.tcb.qcloud.la/imgs/%E6%B3%8A%E5%AF%93%E5%A4%A7%E5%AD%A6%E5%9F%8E%E5%BA%97.png?sign=c1f9a2c2fc36b08de1fc5867a4d6bcbd&t=1594455806"></image>
+                  <view class="item_center_right">
+                    <view>泊寓-大学城店</view>
+                    <view>共计次数：{{item.differenceDate_cs}}</view>
+                    <view class="item_center_right_money"> 
+                      <view>{{item.Discount * 10}}折优惠{{item.money * item.differenceDate_cs}}</view> 
+                      <view>￥{{(item.money * item.differenceDate_cs) * item.Discount}}</view>
+                    </view>
+                  </view>
+                </view>
+                <view class="item_bottom">
+                  <view class="phone" catchtap="phone">电话联系</view>
+                  <view class="pay" hidden="{{item.done != 1}}" catchtap="pay" data-money="{{(item.money * item.differenceDate_cs) * item.Discount}}" data-id="{{item._id}}">立即支付</view>
+                </view>
+              </view>
+              <view class="no_records" hidden="{{!feedingOrder.length < 1}}">暂无喂养记录~</view>
+        </scroll-view>
+  </view>
+</view>

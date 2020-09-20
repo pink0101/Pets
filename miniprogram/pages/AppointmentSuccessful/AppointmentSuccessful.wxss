@@ -1,0 +1,46 @@
+/* miniprogram/pages/AppointmentSuccessful/AppointmentSuccessful.wxss */
+.top_box{
+  position: fixed;
+  height: 152rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: #ffffff;
+  padding-top: 50rpx;
+  z-index: 999;
+}
+.top_box_left{
+  position: absolute;
+  left: 30rpx;
+  display: flex;
+  width: 131rpx;
+  justify-content: space-between;
+}
+.top_box_left image{
+  width: 45rpx;
+  height: 46rpx;
+}
+.success_title{
+  margin: 30rpx 30rpx 0;
+  font-size: 40rpx;
+}
+.success_value{
+  margin: 30rpx 30rpx 0;
+}
+.look_order{
+  position: fixed;
+  width: 90%;
+  height: 100rpx;
+  bottom: 30rpx;
+  border: 2rpx solid #ff743b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  color: #ff743b;
+  font-weight: bold;
+  left: 5%;
+}

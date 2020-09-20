@@ -1,0 +1,40 @@
+/* miniprogram/pages/introduce/introduce.wxss */
+.content{
+  padding:30rpx 20rpx 0;
+}
+.title{
+  font-weight: 500;
+  font-size: 40rpx;
+}
+.title1{
+  font-weight: 500;
+  font-size: 40rpx;
+  text-align: center;
+  padding: 20rpx 20rpx ;
+  background: #ff8100;
+}
+.Date_issue{
+  margin-top: 20rpx;
+  color: #797979;
+  margin-bottom: 50rpx;
+}
+.text{
+  padding: 10rpx 20rpx ;
+  text-align: left;
+  background: #ff8100;
+  line-height: 52rpx;
+}
+.saoyisao{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff8100;
+  padding: 40rpx 0;
+  margin-bottom: 20rpx;
+  border-bottom-right-radius:10rpx;
+border-bottom-left-radius:10rpx;
+}
+.saoyisao image{
+  border-radius: 50%;
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "top-assembly": "../../components/top-assembly/top-assembly"
+  }
+}

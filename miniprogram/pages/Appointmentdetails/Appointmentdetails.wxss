@@ -1,0 +1,59 @@
+/* miniprogram/pages/Appointmentdetails/Appointmentdetails.wxss */
+.content{
+  background: #ffffff;
+  position: fixed;
+  padding-top: 200rpx;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item_center{
+  padding:30rpx 20rpx;
+  display: flex;
+  width: 90%;
+  border-radius: 10rpx;
+  background: #ffffff;
+  box-shadow:0rpx 0rpx 20rpx 10rpx #f7f7f7;
+}
+.item_center image{
+  width: 211rpx;
+  height: 135rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.item_center_right{
+  padding: 5rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item_center_right view:nth-child(1){
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.item_center_right view:nth-child(2){
+  font-size: 25rpx;
+  color: #959595;
+}
+.item_center_right view:nth-child(3){
+  font-size: 25rpx;
+  color: #959595;
+}
+.item_text{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.item_title{
+  margin: 30rpx 0;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.border_bottom{
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #dddddd;
+}

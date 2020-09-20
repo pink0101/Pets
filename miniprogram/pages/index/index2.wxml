@@ -1,0 +1,23 @@
+<view class="my">
+  <view class="login">
+    <view class="profile-img">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName" class="profile-text"></open-data>
+  </view>
+  <view class="content">
+    <view class="content_item" bindtap="feedingOrder">
+      <view>预约喂养</view>
+      <image src="../../image/more.png"></image>
+    </view>
+    <view class="content_item" bindtap="feedingrecords">
+      <view>喂养记录</view>
+      <image src="../../image/more.png"></image>
+    </view>
+    <view class="content_item" bindtap="feedback">
+      <view>意见反馈</view>
+      <image src="../../image/more.png"></image>
+    </view>
+  </view>
+  <view class="profile"></view>
+</view>

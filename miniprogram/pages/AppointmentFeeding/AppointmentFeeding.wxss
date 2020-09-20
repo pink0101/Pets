@@ -1,0 +1,62 @@
+/* pages/AppointmentFeeding.wxss */
+.top_box{
+  position: fixed;
+  height: 152rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: #ffffff;
+  padding-top: 50rpx;
+  z-index: 999;
+}
+.top_box_left{
+  position: absolute;
+  left: 30rpx;
+  display: flex;
+  width: 131rpx;
+  justify-content: space-between;
+}
+.top_box_left image{
+  width: 45rpx;
+  height: 46rpx;
+}
+.van-cell::after {
+  right: 16px !important;
+}
+.Feeding_title{
+  display: flex;
+  justify-content: center;
+}
+.Feeding_1{
+  padding-left: 16px; 
+  margin:24rpx 0;
+  font-size: 36rpx;
+}
+.van-uploader{
+  margin-left: 16px !important; 
+}
+.order{
+  margin: 30rpx auto 20rpx;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30rpx;
+  height: 100rpx;
+  background: #ff743d;
+  color: #ffffff;
+  border-radius: 10rpx;
+}
+.van-cell__label{
+  color: red !important;
+  text-align: center;
+}
+.van-field__error-message--right{
+  font-size: 40rpx !important;
+}
+.Scribing{
+  text-decoration:line-through !important;
+  -webkit-text-decoration:line-through !important;
+}
